@@ -1,0 +1,11 @@
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+.add-btn {
+  width: fit-content;
+}
