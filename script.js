@@ -30,6 +30,14 @@ const createBook = ({ title, author, removeBtn, hr }, index) => {
     bookDiv.append(bookTitle, bookAuthor, AremoveBtn, Ahr)
     bookContainer.appendChild(bookDiv)
 
+    AremoveBtn.addEventListener('click', (e) => {
+        const remainingBooks = books.filter((book, bookIndex) => {
+            return bookIndex !== index
+        })
+        localStorage.setItem("books", JSON.stringify(remainingBooks))
+        bookDiv.remove()
+    })
+
 }
 
 books.forEach(createBook)
