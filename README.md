@@ -3,15 +3,13 @@
 # Awesome-Books
 
 > Project Description.
-> **.**
+> **Project created using HTML and JAVASCRIPT, user can add and delete the author and the BOOk titles from the local storage as well as saving them.**
 
 ## Built With
 
 - HTML
-- CSS
 - Javascript
 
-## Live Demo
 
 ## Authors
 
@@ -23,7 +21,9 @@
 
 👤 **Author2**
 
-- GitHub: [@githubhandle]()
+- GitHub: [@DavyKn](https://github.com/DavyKn)
+- Twitter: [@davykk04](https://twitter.com/davykk04)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/davis-katana-246600159/)
 
 ## 🤝 Contributing
 
