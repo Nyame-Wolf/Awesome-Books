@@ -1,11 +1,11 @@
-const bookForm = document.querySelector('.book-form');
+const bookForm = document.getElementById('book-form');
 const bookContainer = document.querySelector('.book-container');
 const titleInput = bookForm['title']
 const authorInput = bookForm['author']
 
 const books = JSON.parse(localStorage.getItem("books")) || []
 
-const addBook = (author, book) => {
+const addBook = (title,author) => {
     books.push({
         title,
         author
