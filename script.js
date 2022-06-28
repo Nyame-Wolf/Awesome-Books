@@ -3,7 +3,7 @@ const bookContainer = document.querySelector('.book-container');
 const titleInput = bookForm.title;
 const authorInput = bookForm.author;
 
-const books = JSON.parse(localStorage.getItem('books')) || [];
+let books = JSON.parse(localStorage.getItem('books')) || [];
 
 const addBook = (title, author) => {
   books.push({
@@ -32,8 +32,8 @@ const createBook = ({
 
   AremoveBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    const remaining = books.filter((book, bookIndex) => bookIndex !== index);
-    localStorage.setItem('books', JSON.stringify(remaining));
+    books = books.filter((book, bookIndex) => bookIndex !== index);
+    localStorage.setItem('books', JSON.stringify(books));
     bookDiv.remove();
   });
 };
